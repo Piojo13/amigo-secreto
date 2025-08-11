@@ -16,6 +16,15 @@ function agregarAmigo() {
         alert("Por favor, ingrese un nombre.")
     }  
 }
+function mostrarLista() {
+    //Obtener nombre
+    //document.getElementById("listaAmigos")
+    //
+}
 function sortearAmigo() {
-
+    if (nombresAmigos = "") {
+        alert("La lista de amigos esta vacia, no es posible sortear")
+    } else {
+        let numeroLista = Math.floor(Math.random())
+    }
 }
