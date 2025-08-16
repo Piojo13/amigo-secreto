@@ -35,6 +35,7 @@ function sortearAmigo() {
             let nombreAleatorio = nombresAmigos[numeroLista];
             document.getElementById("resultado").innerHTML = `Tu amigo secreto es ${nombreAleatorio}`;
             document.getElementById("listaAmigos").innerHTML = "";
+            nombresAmigos = []
          }
     }
 };
