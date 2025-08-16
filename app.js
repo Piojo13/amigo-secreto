@@ -10,6 +10,7 @@ function agregarAmigo() {
        }  else { 
              nombresAmigos.push(nombre);
             document.getElementById("amigo").value = "";
+            mostrarLista();
        }
     } else {
         alert("Por favor, ingrese un nombre.");
@@ -17,10 +18,10 @@ function agregarAmigo() {
 };
 function mostrarLista() {
     let listaNombres = document.getElementById("listaAmigos");
+    listaNombres.innerHTML = "";
     for (const amigo of nombresAmigos) {
      listaNombres.innerHTML += `<li>${amigo}</li>`;
     }
-    //listaNombres.innerHTML = "";
 };
 
 function sortearAmigo() {
