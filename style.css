@@ -34,6 +34,7 @@ body {
 .header-banner {
     flex: 40%;
     display: flex;
+    @media (max-width: 780px) {flex-direction: column;}
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
@@ -159,4 +160,12 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.boton_sortear_amigo {
+    width: auto;
+}
+
+.imagen_amigo_secreto {
+    width: auto;
 }
