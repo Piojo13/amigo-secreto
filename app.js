@@ -3,8 +3,8 @@
 let nombresAmigos = [];
 const MENSAJE_INICIAL = "Digite el nombre de sus amigos";
 
-function mostrarMensaje(texto) {
-    document.querySelector("h2").textContent = texto;
+function mostrarMensaje(contenido) {
+    document.querySelector("h2").textContent = contenido;
 };
 
 function mostrarLista() {
@@ -17,6 +17,13 @@ function mostrarLista() {
     }
 };
 
+function capitalizarPrimeraLetra(nombre) {
+    if (!nombre) return "";
+    let inicial = nombre.charAt(0).toUpperCase();
+    let resto = nombre.slice(1);
+    return inicial + resto;
+};
+
 function agregarAmigo() {
     let nombre = document.getElementById("amigo").value.trim();
     if (nombre !== "") {
@@ -25,6 +32,7 @@ function agregarAmigo() {
             
        }  else { 
             mostrarMensaje(MENSAJE_INICIAL);
+            nombre = capitalizarPrimeraLetra(nombre);
             nombresAmigos.push(nombre);
             document.getElementById("amigo").value = "";
             mostrarLista();
