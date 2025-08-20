@@ -3,6 +3,13 @@
 let nombresAmigos = [];
 const MENSAJE_INICIAL = "Digite el nombre de sus amigos";
 
+document.addEventListener("keydown", function(event) {
+    
+    if (event.key === "Enter") { 
+        agregarAmigo();
+    }
+});
+
 function mostrarMensaje(contenido) {
     document.querySelector("h2").textContent = contenido;
 };
@@ -27,12 +34,11 @@ function capitalizarPrimeraLetra(nombre) {
 function agregarAmigo() {
     let nombre = document.getElementById("amigo").value.trim();
     if (nombre !== "") {
+        nombre = capitalizarPrimeraLetra(nombre);
         if (nombresAmigos.includes(nombre)) {
-        mostrarMensaje("Ese nombre ya fue incluido en la lista, ingrese otro o utilice una distinción.");
-            
+        mostrarMensaje("Ese nombre ya fue incluido en la lista, ingrese otro o utilice una distinción.");            
        }  else { 
-            mostrarMensaje(MENSAJE_INICIAL);
-            nombre = capitalizarPrimeraLetra(nombre);
+            mostrarMensaje(MENSAJE_INICIAL);            
             nombresAmigos.push(nombre);
             document.getElementById("amigo").value = "";
             mostrarLista();
