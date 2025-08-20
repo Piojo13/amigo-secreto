@@ -34,7 +34,6 @@ body {
 .header-banner {
     flex: 40%;
     display: flex;
-    @media (max-width: 780px) {flex-direction: column;}
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
@@ -168,4 +167,10 @@ ul {
 
 .imagen_amigo_secreto {
     width: auto;
+}
+
+@media (max-width: 780px) {
+    .header-banner {
+        flex-direction: column;
+    }
 }
