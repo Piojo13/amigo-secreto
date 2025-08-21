@@ -13,9 +13,13 @@ Este proyecto es una aplicación sencilla en JavaScript para agregar amigos a un
 ## 📌 ¿Cómo usar?
 1.Escribe un nombre en el campo de texto.
 
-2.Haz clic en Agregar:
+2.Haz clic en Agregar o presiona la tecla "Enter":
 
 - Si el nombre ya existe → aparece un mensaje de error.
+
+- Si el nombre posee caracteres especiales → aparece un mensaje de error.
+
+- Si el nombre posee número/s → aparece un mensaje de error.
 
 - Si el campo está vacío → aparece un mensaje de error.
 
@@ -23,9 +27,11 @@ Este proyecto es una aplicación sencilla en JavaScript para agregar amigos a un
 
 3.Haz clic en Sortear:
 
-- Si hay menos de 2 nombres, aparece un mensaje de error.
+- Si hay menos de 2 nombres → aparece un mensaje de error.
 
-- Si la lista es válida, se sortea un amigo secreto y se muestra en pantalla.
+- Si la lista esta vacia → aparece un mensaje de error.
+
+- Si la lista es válida → se sortea un amigo secreto y se muestra en pantalla.
 
 ## ⚙️ Requisitos
 - Navegador actualizado (Chrome, Firefox, Edge, etc.).
