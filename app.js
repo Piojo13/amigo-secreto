@@ -34,7 +34,7 @@ function capitalizarPrimeraLetra(nombre) {
 
 function agregarAmigo() {
     let nombre = document.getElementById("amigo").value.trim();
-    if (!nombre   ||  !regex.test(nombre)) {
+    if (!nombre   ||  !regex.test(nombre) || nombre.length <= 2) {
         mostrarMensaje("Por favor, ingrese un nombre válido");
     }
     else {
@@ -45,8 +45,7 @@ function agregarAmigo() {
             mostrarMensaje(MENSAJE_INICIAL);            
             nombresAmigos.push(nombre);
             document.getElementById("amigo").value = "";
-            mostrarLista();
-        
+            mostrarLista();        
         }
     }  
 };
