@@ -1,7 +1,10 @@
 # Amigo Secreto 🎉
 
-Este proyecto es una aplicación sencilla en JavaScript para realizar el sorteo de un "amigo secreto".
-Permite a los usuarios agregar nombres a una lista y sortear aleatoriamente un amigo secreto.
+***Amigo Secreto*** es una aplicación interactiva diseñada para realizar sorteos de amigos secretos de manera divertida y dinámica.
+
+El proyecto se basa en ***código HTML y CSS proporcionado por Alura Latam***, sobre el cual se realizaron ***personalizaciones y mejoras con JavaScript*** para agregar funcionalidades interactivas y efectos visuales.
+
+>⚠️ Nota: La idea original y la estructura base del proyecto fueron proporcionadas por Alura Latam. Todas las funcionalidades interactivas y personalizaciones adicionales fueron realizadas por [mi](https://github.com/Piojo13).
 
 ## 🖼 Capturas de pantalla
 
