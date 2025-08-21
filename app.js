@@ -70,7 +70,30 @@ function sortearAmigo() {
          }else {
             mostrarMensaje(MENSAJE_INICIAL)
             sorteo();
+            reproducirSonido();
             reiniciarLista();
          }
     }
+};
+
+function lanzarConfeti() {
+    confetti({
+        particleCount: 150,
+        spread: 80,
+        origin: { y: 0.6 }
+    });
+};
+
+function reproducirSonido() {
+    let tambor = document.getElementById("tambor");
+
+    tambor.play();
+
+    setTimeout(() => {
+        tambor.pause();
+        tambor.currentTime = 0;
+    }, 5000);
+    setTimeout(() => {
+    lanzarConfeti();
+    }, 3000);
 };
