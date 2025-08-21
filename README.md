@@ -76,7 +76,7 @@ git clone https://github.com/tu-usuario/proyecto-amigo-secreto.git
 
 - CSS
 
-- JavaScript (DOM, eventos, setInterval, setTimeout)
+- JavaScript
 
 - [canvas-confetti](https://www.npmjs.com/package/canvas-confetti)(para animaciones de confeti)
 
