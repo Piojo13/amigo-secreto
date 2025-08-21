@@ -1,43 +1,81 @@
 # Amigo Secreto 🎉
 
-Este proyecto es una aplicación sencilla en JavaScript para agregar amigos a una lista y sortear un "amigo secreto".
+Este proyecto es una aplicación sencilla en JavaScript para realizar el sorteo de un "amigo secreto".
+Permite a los usuarios agregar nombres a una lista y sortear aleatoriamente un amigo secreto.
 
+## 🖼 Capturas de pantalla
+
+<div align="center">
+
+Ingreso de nombres y lista de amigos:
+
+<img src="assets/screenshots/screenshot1.png" alt="Screenshot de lista" width="500">
+
+Sorteo con suspenso y confeti:
+
+<img src="assets/screenshots/screenshot2.png" alt="Screenshot de sorteo" width="500">
+
+</div>
 
 ## ⚙️ Funciones
-- **Agregar amigos**: Agrega a los participantes del sorteo a una lista.
-- **Sortear**: Selecciona a tu amigo secreto mediante un sorteo usando los nombres de la lista.
+- **Agregar amigos a la lista** con validación de caracteres y longitud mínima.
+
+- **Capitalización automática** de nombres.
+
+- **Sorteo con suspenso**, mostrando los nombres en rápida sucesión antes de revelar al ganador.
+
+- **Confeti y sonido** al anunciar al ganador.
+
+- **Reinicio automático** de la lista después del sorteo.
+
+- **Sporte de teclado**: presionar Enter agrega un amigo a la lista.
 
 ## 🚀 Instalación
-1. Clona este repositorio.
+1. Clona este repositorio o descarga el proyecto.
+- Desde GitHub:
+```bash
+git clone https://github.com/tu-usuario/proyecto-amigo-secreto.git
+```
+- O descargar el ZIP del repositorio y descomprimirlo en tu computadora.
+
 2. Abre el archivo `index.html` en tu navegador.
+- Entrar a la carpeta del proyecto y abrir index.html en cualquier navegador moderno (Chrome, Firefox, Edge, etc.).
 
 ## 📌 ¿Cómo usar?
-1.Escribe un nombre en el campo de texto.
+1.**Agregar amigos**
 
-2.Haz clic en Agregar o presiona la tecla "Enter":
+- Escribir el nombre en el campo de texto "Escribe un nombre".
 
-- Si el nombre ya existe → aparece un mensaje de error.
+- Se validan los nombres: solo letras, mínimo 3 caracteres y no repetidos.
 
-- Si el nombre posee caracteres especiales → aparece un mensaje de error.
+2.**Realizar un sorteo**
 
-- Si el nombre posee número/s → aparece un mensaje de error.
+- Una vez que haya al menos 2 nombres, hacer clic en Sortear.
 
-- Si el campo está vacío → aparece un mensaje de error.
+- Aparecerá la animación de “ruleta” con los nombres cambiando rápidamente.
 
-- Si es válido → el nombre se añade a la lista.
+- Sonará un tambor de suspenso mientras gira la ruleta.
 
-3.Haz clic en Sortear:
+- Tras unos segundos, se mostrará el ganador con confeti.
 
-- Si hay menos de 2 nombres → aparece un mensaje de error.
+3.**Reinicio automático**
 
-- Si la lista esta vacia → aparece un mensaje de error.
-
-- Si la lista es válida → se sortea un amigo secreto y se muestra en pantalla.
+- Después de mostrar el ganador, la lista se reinicia automáticamente para un nuevo sorteo.
 
 ## ⚙️ Requisitos
 - Navegador actualizado (Chrome, Firefox, Edge, etc.).
 
 - Conexión a Internet no necesaria (el proyecto funciona de forma local)
+
+## 🛠 Tecnologías utilizadas
+
+- HTML
+
+- CSS
+
+- JavaScript (DOM, eventos, setInterval, setTimeout)
+
+- [canvas-confetti](https://www.npmjs.com/package/canvas-confetti)(para animaciones de confeti)
 
 ## Autor
 - [Github](https://github.com/Piojo13)
