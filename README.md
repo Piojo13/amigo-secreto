@@ -2,6 +2,7 @@
 
 Este proyecto es una aplicación sencilla en JavaScript para agregar amigos a una lista y sortear un "amigo secreto".
 
+
 ## ⚙️ Funciones
 - **Agregar amigos**: Agrega a los participantes del sorteo a una lista.
 - **Sortear**: Selecciona a tu amigo secreto mediante un sorteo usando los nombres de la lista.
