@@ -45,13 +45,13 @@ git clone https://github.com/tu-usuario/proyecto-amigo-secreto.git
 - Entrar a la carpeta del proyecto y abrir index.html en cualquier navegador moderno (Chrome, Firefox, Edge, etc.).
 
 ## 📌 ¿Cómo usar?
-1.**Agregar amigos**
+1. **Agregar amigos**
 
 - Escribir el nombre en el campo de texto "Escribe un nombre".
 
 - Se validan los nombres: solo letras, mínimo 3 caracteres y no repetidos.
 
-2.**Realizar un sorteo**
+2. **Realizar un sorteo**
 
 - Una vez que haya al menos 2 nombres, hacer clic en Sortear.
 
@@ -61,7 +61,7 @@ git clone https://github.com/tu-usuario/proyecto-amigo-secreto.git
 
 - Tras unos segundos, se mostrará el ganador con confeti.
 
-3.**Reinicio automático**
+3. **Reinicio automático**
 
 - Después de mostrar el ganador, la lista se reinicia automáticamente para un nuevo sorteo.
 
