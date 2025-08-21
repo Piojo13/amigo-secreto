@@ -2,6 +2,7 @@
 
 let nombresAmigos = [];
 const MENSAJE_INICIAL = "Digite el nombre de sus amigos";
+const regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/;
 
 document.addEventListener("keydown", function(event) {
     
@@ -33,18 +34,20 @@ function capitalizarPrimeraLetra(nombre) {
 
 function agregarAmigo() {
     let nombre = document.getElementById("amigo").value.trim();
-    if (nombre !== "") {
+    if (!nombre   ||  !regex.test(nombre)) {
+        mostrarMensaje("Por favor, ingrese un nombre válido");
+    }
+    else {
         nombre = capitalizarPrimeraLetra(nombre);
         if (nombresAmigos.includes(nombre)) {
         mostrarMensaje("Ese nombre ya fue incluido en la lista, ingrese otro o utilice una distinción.");            
-       }  else { 
+        } else { 
             mostrarMensaje(MENSAJE_INICIAL);            
             nombresAmigos.push(nombre);
             document.getElementById("amigo").value = "";
             mostrarLista();
-       }
-    } else {
-        mostrarMensaje("Por favor, ingrese un nombre")
+        
+        }
     }  
 };
 
