@@ -53,7 +53,7 @@ function agregarAmigo() {
 function sorteo() {
     let numeroLista = Math.floor(Math.random()* nombresAmigos.length);
     let nombreAleatorio = nombresAmigos[numeroLista];
-    document.getElementById("resultado").innerHTML = `Tu amigo secreto es ${nombreAleatorio}`;
+    mostrarConSuspenso(nombreAleatorio);
 };
 
 function reiniciarLista() {
@@ -71,8 +71,10 @@ function sortearAmigo() {
             mostrarMensaje(MENSAJE_INICIAL)
             sorteo();
             reproducirSonido();
-            reiniciarLista();
-         }
+            setTimeout(() => {
+                reiniciarLista();
+            }, 3000);
+        }
     }
 };
 
@@ -95,5 +97,21 @@ function reproducirSonido() {
     }, 5000);
     setTimeout(() => {
     lanzarConfeti();
+    }, 3000);
+};
+
+function mostrarConSuspenso(nombreGanador) {
+    let texto = document.getElementById("resultado");
+    let i = 0;
+    let intervalo = setInterval(() => {
+        texto.textContent = nombresAmigos[i % nombresAmigos.length];
+        i++;
+    }, 150);
+
+    setTimeout(() => {
+        clearInterval(intervalo);
+        texto.textContent = `🎉 ¡El amigo secreto es: ${nombreGanador}! 🎉`;
+        lanzarConfeti();
+        reproducirSonido();
     }, 3000);
 };
