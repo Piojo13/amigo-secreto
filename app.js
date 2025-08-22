@@ -2,7 +2,7 @@
 
 let nombresAmigos = [];
 const MENSAJE_INICIAL = "Digite el nombre de sus amigos";
-const regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/;
+const regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+(?:\s[a-zA-ZáéíóúÁÉÍÓÚñÑ]+)*$/;
 
 document.addEventListener("keydown", function(event) {
     
